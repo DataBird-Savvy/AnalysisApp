@@ -29,27 +29,83 @@
 
 ---
 
-## Getting Started with Docker
+---
 
-### 1. Clone the Repository
+## 🐳 Getting Started with Docker
 
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/DataBird-Savvy/AnalysisApp.git
+cd DataAnalysisApp
+```
+
+### 2️⃣ Build Docker Images
+```bash
+docker-compose build --no-cache
+```
+
+### 3️⃣ Run the App
+```bash
+docker-compose up
+```
+
+- Frontend: [http://localhost:3000](http://localhost:3000)
+- Backend: [http://localhost:8000](http://localhost:8000)
+
+### 🛑 Stop the App
+```bash
+docker-compose down
+```
+
+---
+
+## ⚡ Getting Started Without Docker
+
+### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/your-username/DataAnalysisApp.git
 cd DataAnalysisApp
+```
 
-### Build Docker Images
-docker-compose build --no-cache
+---
 
+### 2️⃣ Run the Backend (FastAPI)
 
-### Run the App
-docker-compose up
+```bash
+# Create a virtual environment (optional)
+python -m venv venv
 
+# Activate the virtual environment
+# Windows:
+venv\Scripts\activate
+# macOS/Linux:
+source venv/bin/activate
 
+# Install dependencies
+pip install -r backend/requirements.txt
 
-Frontend: http://localhost:3000
+# Run FastAPI server
+uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000
+```
 
-Backend: http://localhost:8000
+✅ Backend: [http://localhost:8000](http://localhost:8000)
 
-### To stop:
+---
 
-docker-compose down
+### 3️⃣ Run the Frontend (Next.js)
+
+```bash
+# Open a new terminal
+cd frontend
+
+# Install Node.js dependencies
+npm install
+
+# Start Next.js dev server
+npm run dev
+```
+
+✅ Frontend: [http://localhost:3000](http://localhost:3000)
+
+---
+```
