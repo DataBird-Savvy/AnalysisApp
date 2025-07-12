@@ -1,1 +1,14 @@
-pandas
+fastapi==0.110.2
+uvicorn==0.29.0
+
+pandas==2.3.0
+numpy==1.26.4
+scipy==1.16.0
+prophet==1.1.7
+holidays==0.76
+
+requests==2.32.4
+orjson==3.10.18
+PyYAML==6.0.2
+python-dateutil==2.9.0.post0
+pytz==2025.2
