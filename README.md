@@ -3,6 +3,7 @@
 **DataAnalysisApp** is a full-stack interactive analytics dashboard built with **FastAPI** (backend) and **Next.js/React.js** (frontend). It provides real-time insights into company performance — including revenue, gross value added (GVA), security incidents, and more — tailored for Wayne Enterprises.
 
 ---
+https://www.youtube.com/watch?v=cGgtNB0j6MQ
 
 ## Features
 
